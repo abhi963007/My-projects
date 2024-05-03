@@ -40,7 +40,7 @@ This is a simple Todo List web application built using Flask and MongoDB. It all
 
 ## Installation
 
-1. Clone the repository: https://github.com/aswin-krishna-m/ADBMS_LAB.git
+1. Clone the repository: 
 
 2. Install Python and MongoDB on your system if not already installed. 
 
