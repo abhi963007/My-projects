@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>.strike{text-decoration: line-through;}</style>
+</head>
+<body onload="startTime()">
+    {% with messages = get_flashed_messages()%}
+    {% if messages %}
+        {% for message in messages%}
+            <div class="alert alert-info alert-dismissible fade show w-50 mx-auto" style="position: absolute;z-index: 999; left: 25%;" role="alert">
+                <span>{{message}}</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {%endfor%}
+    {%endif%}
+    {%endwith%}
+
+    {% for tsk in tasks %}{% if tsk.late %}
+    <div class="alert alert-danger alert-dismissible fade show w-50 mx-auto" style="position: absolute;z-index: 999; left: 25%;" role="alert">
+       <strong class="h4">Reminder : </strong> <span class="h5"> {{tsk.name}} </span> at {{tsk.time_to_complete}} is pending!!
+       <form action="/status/{{ tsk._id }}" class="text-center mb-2 mt-4" method="post"><button type="submit" class="btn btn-secondary">complete now</button></form>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endif %}{% endfor %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Todo List</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item active"><a class="nav-link" href="#" id="liveTime"><!--CurrentTime--></a></li>
+          </ul>  
+          {% if loggedIn %}
+          <form class="d-flex">
+            <a class="nav-link active" aria-current="page" href="/logout" data-toggle="tooltip" title="Logout" onclick="return confirm('Logout?');"><i class="bi bi-box-arrow-right"></i></a>
+          </form>
+          {% endif %}
+        </div>
+    </nav>
+    <div class="container my-5">
+        {% if loggedIn %}
+        <form action="/add" method="post" class="mb-3">
+            <div class="row">
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="task_name" class="form-control" placeholder="Task Name" required>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <input type="datetime-local" min="{{datetime}}" name="time_to_complete" class="form-control" required>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary w-100">Add Task</button>
+                </div>
+            </div>
+        </form>
+        {% if tasks %}<h2 class="m-2 my-3">upcoming/pending tasks</h2>{% endif %}
+        <ul class="list-group">
+            {% for task in tasks %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="col-md-5 fw-bold">
+                        <span class="h5"> {{ task.name }} - </span>
+                        <span class="{% if task.late %} text-danger  {% else %} text-success {% endif %}"> {{ task.time_to_complete }}</span>
+                    </div>
+                    <div class="col-md-5" id="updateInput" style="visibility: hiden;">
+                        <form action="/update/{{ task._id }}" method="post" class="d-flex">
+                            <input type="text" name="new_task_name" class="form-control w-25 " value="{{ task.name }}" placeholder="New Task Name" required>
+                            <input type="datetime-local" name="new_task_time" min="{{datetime}}" class="form-control w-50" value="{{ task.time_to_complete }}" required>
+                            <button type="submit" class="btn btn-warning" >Update</button>
+                        </form>
+                    </div>
+                    <div> 
+                        <form action="/status/{{ task._id }}" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-success" data-toggle="tooltip" title="Mark as Completed"><i class="bi bi-clipboard-check"></i></button>
+                        </form>
+                        <form action="/delete/{{ task._id }}" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-danger" data-toggle="tooltip" title="Delete Task"><i class="bi bi-trash"></i></button>
+                        </form>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        {% if ctasks %}<h2 class="m-2 my-3">completed tasks</h2>{% endif %}
+        <ul class="list-group">
+            {% for task in ctasks %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="{% if task.status  == 'completed' %} strike {% endif %}">
+                        <span class="text-muted">{{ task.name }}</span>
+                        <span class="text-muted">- {{ task.time_to_complete }}</span>
+                    </div>
+                    <div>
+                    <form action="/delete/{{ task._id }}" method="post" class="d-inline">
+                        <button type="submit" class="btn btn-danger" data-toggle="tooltip" title="Delete Task"><i class="bi bi-trash"></i></button>
+                    </form>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% if not tasks and not ctasks %}
+        <div class="text-center my-5" >
+            <img src="{{url_for('static',filename='no-task.png')}}" height="300" width="300" alt="">
+        </div>
+    {% endif %}
+    {% else %}
+        <div class="container py-5 w-50" style="border:solid 1px; border-radius: 20px;">
+            <ul class="nav nav-pills nav-justified" id="pills-tab">
+                <li class="nav-item">
+                    <button class="nav-link active" id="login-tab" data-bs-toggle="pill" data-bs-target="#login" type="button" onclick="loginForm()">Login</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="signup-tab" data-bs-toggle="pill" data-bs-target="#signup" type="button" onclick="signupForm()">Signup</button>
+                </li>
+            </ul>
+                <div class="tab-content" id="pills-tabContent"> 
+                    <form action="/login" method="post" id="formId">
+                        <h1 class="h3 mb-3 text-center" id="headId">Login</h1>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" name="username" id="floatingInput" placeholder="Enter Username" required>
+                            <label for="floatingInput">Username</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password" required>
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <button class="w-100 btn btn-primary my-3" id="buttonId" type="submit">Login</button>
+                    </form> 
+                </div>    
+            </div>
+        </div>
+    {% endif %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
+
