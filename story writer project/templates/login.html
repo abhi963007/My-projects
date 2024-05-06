@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock%}
+
+{% block content %}
+
+{% with messages = get_flashed_messages()%}
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-warning alert-dismissible fade show w-50 mx-auto" style="position: absolute;z-index: 999; left: 25%;" role="alert">
+                <span>{{message}}</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {%endfor%}
+    {% endif %}
+{% endwith %}
+<!-- Login -->
+  <div class="container w-50 my-5 py-5 ">      
+      <form action="/login" method="post">
+          <h1 class="h3 text-center my-3" >Login</h1>
+          <div class="form-floating">
+              <input type="text" class="form-control my-2" name="username" id="floatingInput" placeholder="Enter Username" required>
+              <label for="floatingInput">Username</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control my-2" name="password" id="floatingPassword" placeholder="Password" required>
+                <label for="floatingPassword">Password</label>
+            </div>
+            <p class="py-2">Don't have an account? <a href="#" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#staticModal" class="fw-bold">Signup Here</a></p>
+            <button class="w-100 btn btn-lg btn-primary mb-3" id="buttonId" type="submit">Login</button>
+        </form> 
+    </div>
+
+  <!-- Popup Register-->
+  <div class="modal fade" id="staticModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                <form action="/signup" method="post" class="container p-2">
+                    <h1 class="h3 text-center my-3" >Signup</h1>
+                    <div class="form-floating">
+                        <input type="text" class="form-control my-2" name="username" id="floatingInput" placeholder="Enter Username" required>
+                        <label for="floatingInput">Username</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="text" class="form-control my-2" name="penName" id="floatingInput" placeholder="Enter Pen name" required>
+                        <label for="floatingInput">Pen name</label>
+                      </div>
+                      <div class="form-floating">
+                          <input type="password" class="form-control my-2" name="password" id="floatingPassword" placeholder="Password" required>
+                          <label for="floatingPassword">Password</label>
+                      </div>
+                      <button class="w-100 btn btn-lg btn-primary mb-3" id="buttonId" type="submit">Signup</button>
+                  </form> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

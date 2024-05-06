@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}My Stories{% endblock %}
+{% block content %}
+{% with messages = get_flashed_messages()%}
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-warning alert-dismissible fade show w-50 mx-auto" style="position: absolute;z-index: 999; left: 25%;" role="alert">
+                <span>{{message}}</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {%endfor%}
+    {%endif%}
+{%endwith%}
+{% include "nav.html" %}
+<div class="container my-5">
+        {% if stories %}
+            <h2 class="mt-2 mb-4 text-center">My Stories</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                {% for story in stories %}
+                        <div class="col">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <small class="text-muted"><i class="bi bi-sticky"></i> {{story.genre}} <span class="float-end"><i class="bi bi-eye-fill"></i> {{story.views}}</span></small>
+                            </div>
+                            <div class="card-body">    
+                            <h4 class="card-title">{{story.title}}</h4>
+                            <p class="card-text">{{story.content[:300]}}...</p>
+                            </div>
+                            <div class="card-footer"><small>Updated : {{story.created}}</small>
+                                
+                            <small class="text-muted"><a href="/update/{{ story._id }}" style="text-decoration: none;" class="float-end"><i class="bi bi-pencil-square"></i> Edit</a></small>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        {% endfor %}
+                    </div>
+            {% else %}   
+        <div class="text-center my-5" >
+            <img src="/static/empty-stories.png" class="mt-5" width="400" alt="no My stories">
+            <h4 class="my-4">You don't have any stories. <a href="#" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#StoryModal">Publish Now</a></h4>
+        </div>
+    {% endif %}
+   
+{% endblock %}

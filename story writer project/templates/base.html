@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    {% block content %}
+      
+    {% endblock %}
+
+     <!-- Popup Add Story-->
+  <div class="modal fade w-100" id="StoryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                <form action="/add" method="post" class="container p-2">
+                    <h1 class="h3 text-center my-3" >Unleash your creativity here</h1>
+                    <div class="row">
+                        <div class="col-md-6 my-2">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" name="title" id="floatingInput" placeholder="Enter title" required>
+                                <label for="floatingInput">Title</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <div class="form-floating">
+                                <select name="genre" id="" class="form-control" required>
+                                    <option hidden selected disabled value="" >Choose Genre</option>
+                                    <option value="Crime">Crime</option>
+                                    <option value="Fantasy">Fantasy</option>
+                                    <option value="Fiction">Fiction</option>
+                                    <option value="General">General</option>
+                                    <option value="Horror">Horror</option>
+                                    <option value="Mystery">Mystery</option>
+                                    <option value="Romance">Romance</option>
+                                    <option value="Science Fiction">Science Fiction</option>
+                                    <option value="Thriller">Thriller</option>
+                                </select>
+                                <label for="floatingInput">Genre</label> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-floating">
+                        <textarea name="content" class="form-control-lg" minlength="50" id="" rows="13" cols="76" placeholder="Write your story here......" required></textarea>
+                    </div>
+                        <button class="w-100 btn btn-lg btn-primary mb-3" id="buttonId" type="submit">Publish</button>
+                  </form> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer my-5"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Storyoh-Read{% endblock %}
+
+{% block content %}
+{% with messages = get_flashed_messages()%}
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-warning alert-dismissible fade show w-50 mx-auto" style="position: absolute;z-index: 999; left: 25%;" role="alert">
+                <span>{{message}}</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {%endfor%}
+    {%endif%}
+{%endwith%}
+{% include "nav.html" %}
+<div class="container p-2 my-5 mx-auto">
+    <div class="header text-center">
+        <h1 class="display-3 fw-bold">{{story.title}}</h1>
+        <span>Written By {{story.penName}}| Views <i class="bi bi-eye-fill"></i> : {{story.views}}</span>
+    </div>
+    <div class="container py-5 m-4 h5"><p style="font-family: 'Times New Roman', Times, serif;">{{story.content}}</p><p class="text-center my-5">************************** THE END **************************</p></div>
+</div>
+{% endblock %}
