@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dala</title>
+    <meta name="description" content="Your workplace has the answer. Just ask Dala for it.">
+    <meta name="author" content="unseen.co">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
+    <meta property="og:title" content="Dala">
+    <meta property="og:site_name" content="Your workplace has the answer. Just ask Dala for it.">
+    <meta property="og:url" content="https://dala.ai/">
+    <meta property="og:description" content="Your workplace has the answer. Just ask Dala for it.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dala.ai/images/fb-og.jpg">
+    <meta property="og:image:alt" content="The Dala logo above the headline &quot;Unlock collective wisdom&quot;, sitting on top of a 3D brain composed of many small pyramidal particles.">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@askdala">
+    <meta name="twitter:title" content="Dala">
+    <meta name="twitter:description" content="Your workplace has the answer. Just ask Dala for it.">
+    <meta name="twitter:image" content="https://dala.ai/images/twitter-og.jpg">
+    <meta name="twitter:image:alt" content="The Dala logo above the headline &quot;Unlock collective wisdom&quot;, sitting on top of a 3D brain composed of many small pyramidal particles.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
+    <link rel="preload" as="font" href="/fonts/acronymlight.woff2?a782fa32a3bfe5049e69aeb5c9a63733" crossorigin="">
+    <link rel="preload" as="font" href="/fonts/acronymregular.woff2?16625e424883b6e93e7a060d00fd2295" crossorigin="">
+    <link rel="preload" as="font" href="/fonts/acronymsemibold.woff2?ae0fc41cc463e97a5e06a63d5995467f" crossorigin="">
+    <link rel="stylesheet" href="" defer="defer">
+    <script>
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-L5SSFERMSM", {
+        cookie_expires: 7776e3
+      })
+    </script>
+  </head>
+  <body><button class="nav-toggle js-nav-toggle"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g class="nav-toggle__cross js-nav-toggle-cross">
+          <path d="M2.56 2.535L13.4386 13.4136" stroke="white" stroke-miterlimit="10" />
+          <path d="M13.4389 2.58871L2.56034 13.4673" stroke="white" stroke-miterlimit="10" />
+        </g>
+        <g class="nav-toggle__burger js-nav-toggle-burger">
+          <path d="M0.31 3.35L15.6946 3.35" stroke="white" stroke-miterlimit="10" />
+          <path d="M0.31 7.96426L15.6946 7.96426" stroke="white" stroke-miterlimit="10" />
+          <path d="M0.31 12.579L15.6946 12.579" stroke="white" stroke-miterlimit="10" />
+        </g>
+      </svg><span class="sr">Toggle Mobile Navigation</span></button>
+    <div class="header-blur-block"></div>
+    <header class="header js-header">
+      <div class="header__bg js-header-bg">
+        <div class="header__bg-inner"></div>
+      </div>
+      <div class="header__inner js-header-inner"><button class="header__logo | js-header-logo" anchor-link="landing"><svg width="113" height="48" viewBox="0 0 113 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <image width="38.8085" height="48" xlink:href="/images/dala-d.png?id=ef5e37d64e9743b91d7e" />
+            <g class="js-header-logo-text-group" clip-path="url(#textClip)">
+              <path class="js-header-logo-text" d="M63.4826 14.253C65.7773 16.4227 66.904 19.3616 66.904 23.0766C66.904 26.7915 65.775 29.9363 63.4826 32.3526C61.1903 34.7689 58.0951 35.9928 54.1673 35.9928H46.3711V10.9951H53.9575C58.0145 10.9951 61.1895 12.0811 63.4826 14.253ZM60.944 30.5268C62.6729 28.7779 63.5533 26.2915 63.5533 23.0607C63.5533 20.0155 62.6729 17.7055 60.944 16.1309C59.215 14.5562 56.9204 13.7892 54.1331 13.7892H49.7241V33.1852H54.2859C56.9569 33.1852 59.1785 32.3028 60.944 30.5177V30.5268Z" fill="white" />
+              <path class="js-header-logo-text" d="M80.1758 33.3594V32.6603H80.1393C79.8565 33.6038 79.2269 34.4703 78.2689 35.2485C77.3109 36.0268 75.9401 36.4047 74.1404 36.4047C72.0876 36.4047 70.5069 35.8798 69.4121 34.7938C68.3172 33.7078 67.7447 32.4838 67.7447 31.0495C67.7326 30.271 67.9144 29.5017 68.2739 28.8096C68.5818 28.2217 69.0016 27.6985 69.5102 27.2689C70.0785 26.8568 70.71 26.5383 71.3805 26.3255C72.0286 26.1143 72.6881 25.9391 73.3558 25.8006C73.885 25.6943 74.5556 25.5902 75.4086 25.4839L77.0053 25.2757C78.2051 25.0653 79.0581 24.7508 79.5143 24.3707C79.9705 23.9906 80.1849 23.4273 80.1849 22.692C80.1849 22.3133 80.0875 21.9408 79.9019 21.6099C79.7163 21.2789 79.4487 21.0003 79.1243 20.8006C78.3852 20.3481 77.3953 20.1015 76.1271 20.1015C74.9867 20.1015 74.0743 20.382 73.374 20.9771C73.012 21.2637 72.7171 21.6251 72.5099 22.0361C72.3028 22.4471 72.1882 22.8979 72.1743 23.3572H68.981C69.0517 21.8164 69.6858 20.4522 70.8856 19.2259C72.0853 18.0359 73.78 17.4409 76.0017 17.4409C77.1266 17.4259 78.2466 17.5917 79.3181 17.9318C80.1194 18.1812 80.8629 18.5857 81.5056 19.1219C82.0115 19.6128 82.4187 20.1948 82.7053 20.8368C82.9564 21.4318 83.1341 22.0547 83.2345 22.692C83.3078 23.3077 83.3436 23.9272 83.3417 24.5472V32.3164C83.3483 33.5469 83.449 34.7752 83.6428 35.9906H80.2442C80.2214 35.3888 80.1758 34.5155 80.1758 33.3594ZM78.6567 32.2802C79.715 31.2644 80.2533 29.6897 80.2533 27.5902V25.1694H80.1849C79.9454 25.8631 79.4758 26.4557 78.8528 26.8504C78.1457 27.3029 76.9102 27.6875 75.1463 28.0042C73.666 28.2485 72.6077 28.5992 71.9371 29.0201C71.2665 29.4409 70.9129 30.1038 70.9129 31.0563C70.9059 31.456 70.9989 31.8512 71.1836 32.2065C71.3683 32.5619 71.6389 32.8663 71.9713 33.0924C72.6761 33.6173 73.5953 33.8639 74.7244 33.8639C75.4531 33.8729 76.1763 33.7374 76.8515 33.4655C77.5268 33.1935 78.1405 32.7906 78.6567 32.2802Z" fill="white" />
+              <path class="js-header-logo-text" d="M89.7004 10.9951V35.9838H86.5254V10.9951H89.7004Z" fill="white" />
+              <path class="js-header-logo-text" d="M104.382 33.3599V32.6608H104.345C104.062 33.6042 103.433 34.4707 102.475 35.249C101.517 36.0273 100.146 36.4051 98.3463 36.4051C96.2934 36.4051 94.7127 35.8802 93.6179 34.7942C92.5231 33.7083 91.9597 32.4843 91.9597 31.0499C91.9464 30.2714 92.1283 29.5017 92.4888 28.8101C92.7967 28.2221 93.2166 27.6989 93.7251 27.2694C94.2934 26.8573 94.925 26.5387 95.5955 26.3259C96.2436 26.1148 96.903 25.9395 97.5707 25.801C98.0999 25.6947 98.7705 25.5906 99.6236 25.4843L101.22 25.2761C102.42 25.0657 103.273 24.7513 103.729 24.3712C104.185 23.9911 104.4 23.4277 104.4 22.6924C104.4 22.3115 104.301 21.9371 104.113 21.6048C103.926 21.2724 103.655 20.9934 103.328 20.7943C102.589 20.3418 101.599 20.0952 100.328 20.0952C99.1993 20.0952 98.2756 20.3757 97.5776 20.9707C97.2155 21.2574 96.9207 21.6187 96.7135 22.0297C96.5063 22.4407 96.3918 22.8915 96.3778 23.3508H93.1959C93.2666 21.8101 93.9007 20.4458 95.1005 19.2196C96.3003 18.0295 97.9927 17.4345 100.217 17.4345C101.342 17.4196 102.462 17.5854 103.533 17.9255C104.334 18.1749 105.078 18.5794 105.721 19.1155C106.226 19.6065 106.634 20.1885 106.92 20.8305C107.171 21.4254 107.349 22.0484 107.449 22.6857C107.523 23.3013 107.559 23.9209 107.557 24.5409V32.3101C107.557 33.5402 107.652 34.7684 107.839 35.9843H104.45C104.416 35.3893 104.382 34.516 104.382 33.3599ZM102.872 32.2807C103.93 31.2648 104.468 29.6902 104.468 27.5906V25.1698H104.4C104.158 25.8649 103.685 26.4577 103.059 26.8508C102.352 27.3033 101.116 27.6879 99.3521 28.0047C97.8718 28.249 96.8135 28.5997 96.1429 29.0205C95.4723 29.4413 95.1187 30.1042 95.1187 31.0567C95.1117 31.4564 95.2048 31.8516 95.3895 32.207C95.5741 32.5623 95.8448 32.8667 96.1771 33.0929C96.8728 33.6178 97.8011 33.8644 98.9256 33.8644C99.6566 33.8752 100.382 33.7406 101.06 33.4686C101.738 33.1966 102.354 32.7926 102.872 32.2807Z" fill="white" />
+              <path class="js-header-logo-text" d="M109.939 12.5227C110.402 12.5112 110.858 12.636 111.249 12.8814C111.64 13.1268 111.949 13.4817 112.137 13.9012C112.325 14.3208 112.383 14.7861 112.304 15.2385C112.225 15.6908 112.013 16.1098 111.694 16.4425C111.375 16.7752 110.964 17.0067 110.513 17.1077C110.061 17.2086 109.59 17.1746 109.158 17.0098C108.726 16.845 108.353 16.5568 108.086 16.1818C107.819 15.8068 107.67 15.3617 107.658 14.9028V14.844C107.654 14.5429 107.71 14.244 107.822 13.9643C107.935 13.6846 108.102 13.4297 108.313 13.2141C108.525 12.9984 108.778 12.8264 109.057 12.7078C109.336 12.5891 109.636 12.5262 109.939 12.5227ZM109.939 16.7014C110.31 16.7151 110.676 16.6194 110.992 16.4264C111.308 16.2334 111.559 15.9519 111.713 15.6174C111.868 15.2829 111.919 14.9105 111.86 14.5473C111.801 14.184 111.635 13.8463 111.382 13.5768C111.13 13.3074 110.802 13.1182 110.441 13.0334C110.08 12.9485 109.702 12.9718 109.355 13.1002C109.007 13.2285 108.706 13.4563 108.489 13.7546C108.271 14.0529 108.148 14.4084 108.135 14.7761C108.135 14.7987 108.135 14.8213 108.135 14.844C108.129 15.0817 108.17 15.3183 108.256 15.5403C108.341 15.7623 108.471 15.9654 108.636 16.1379C108.801 16.3104 108.998 16.4489 109.217 16.5456C109.436 16.6423 109.672 16.6953 109.912 16.7014H109.939ZM109.561 16.0838H109.077V13.5951H109.958C110.48 13.5951 110.856 13.9209 110.856 14.4005C110.858 14.5516 110.81 14.6992 110.721 14.8214C110.631 14.9437 110.504 15.0341 110.359 15.0793L110.888 16.0883H110.373L109.939 15.1584H109.581L109.561 16.0838ZM109.561 14.0204V14.7625H109.889C110.19 14.7625 110.345 14.6494 110.345 14.3937C110.345 14.1381 110.181 14.0204 109.889 14.0204H109.561Z" fill="white" />
+            </g>
+            <clipPath id="textClip">
+              <rect width="74.1915" height="28" x="38.8085" fill="white" y="10" />
+            </clipPath>
+          </svg><span class="sr">Dala</span></button>
+        <div class="header__cta mr-4"><a class="btn t-16 t-14@xs t-16@sm t-ls-0.025 t-600 t-uppercase" aria-label="Request Access" href="https://askdala.typeform.com/to/lSujgyr8" target="_blank" rel="noopener"><span class="btn__text pointer-events-none">Request Access</span>
+            <div class="btn__hover pointer-events-none" aria-hidden="true"></div>
+          </a></div>
+        <h1 class="sr">Dala</h1>
+        <nav class="nav js-nav">
+          <div class="nav__bg js-nav-bg">
+            <div class="nav__bg-inner"></div>
+          </div>
+          <ul class="nav__list js-nav-list">
+            <li class="nav__item | js-nav-item" section-name="manifesto"><a href="/#manifesto" aria-label="Manifesto" class="nav__link js-nav-link" anchor-link="manifesto">Manifesto</a></li>
+            <li class="nav__item | js-nav-item" section-name="team"><a href="/#team" aria-label="Team" class="nav__link js-nav-link" anchor-link="team">Team</a></li>
+            <li class="nav__item | js-nav-item" section-name="blog"><a class="nav__link js-nav-link" aria-label="Blog" href="https://medium.com/dala-ai" target="_blank" rel="noopener">Blog</a></li>
+            <li class="nav__cta | js-nav-item"><a class="btn t-16 t-14@xs t-16@sm t-ls-0.025 t-600 t-uppercase" aria-label="Request Access" href="https://askdala.typeform.com/to/lSujgyr8" target="_blank" rel="noopener"><span class="btn__text pointer-events-none">Request Access</span>
+                <div class="btn__hover pointer-events-none" aria-hidden="true"></div>
+              </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div role="dialog" aria-modal="false" aria-labelledby="cookie-notice-title" aria-describedby="cookie-notice-body" class="cookie-notice fixed | js-cookie-notice">
+      <div class="d-flex items-center">
+        <div class="flex-grow pr-1">
+          <div class="sr" id="cookie-notice-title">Cookie consent</div>
+          <div id="cookie-notice-body" class="cookie-notice__body t-500">This website uses cookies. <a href="#cookies" class="cookie-notice__link t-600" target="_blank" rel="noreferrer noopener">Learn more<span class="sr"> about how we use Cookies</span></a></div>
+        </div>
+        <div class="flex-no-shrink d-flex"><button type="button" class="btn t-16 t-lh-1.2 t-14@xs t-lh-1.4@xs t-16@sm t-lh-1.2@sm -t-ls-0.025 t-600 t-uppercase | js-cookie-notice-toggle">Accept</button></div>
+      </div>
+    </div>
+    <div class="site-loader | js-site-loader">
+      <div class="site-loader__background"></div>
+      <div class="site-loader__content">
+        <div class="site-loader__main">
+          <div class="site-loader__spinner | js-site-loader-spinner"><svg class="site-loader__spinner-svg | js-site-loader-spinner-svg" width="142" height="141" viewBox="0 0 142 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="63.6035" width="14.7917" height="14.7917" fill="white" />
+              <rect x="63.6035" y="125.729" width="14.7917" height="14.7917" fill="white" />
+              <rect x="142" y="62.125" width="14.7917" height="14.7917" transform="rotate(90 142 62.125)" fill="white" />
+              <rect x="16.2715" y="62.125" width="14.7917" height="16.2708" transform="rotate(90 16.2715 62.125)" fill="white" />
+            </svg></div>
+          <div class="site-loader__heading | js-site-loader-heading">
+            <div class="site-loader__heading-text">
+              <div class="site-loader__heading-inner | js-site-loader-heading-text">Your workplace has the answer.</div>
+            </div>
+            <div class="site-loader__heading-text">
+              <div class="site-loader__heading-inner | js-site-loader-heading-text">Ask Dala to find it.</div>
+            </div>
+          </div>
+        </div>
+        <div class="site-loader__info d-flex justify-between items-end">
+          <div class="site-loader__loading">
+            <div class="d-flex overflow-hidden">
+              <div class="site-loader__loading-text | js-site-loader-loading-text">LOADING</div>
+            </div><span class="site-loader__ellipsis | js-site-loader-ellipses">
+              <div class="site-loader__ellipsis-wrapper | js-site-loader-ellipses-wrapper"><span style="display: inline;">.</span><span style="display: inline;">.</span><span style="display: inline;">.</span></div>
+            </span>
+          </div>
+          <div class="site-loader__completed | js-site-loader-completed-text"><span>Completed</span></div>
+          <div class="site-loader__progress | js-site-loader-progress"><span class="js-site-loader-progress-digit"></span><span class="js-site-loader-progress-digit"></span><span class="js-site-loader-progress-digit">0</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-transition-mask-bg | js-nav-transition-mask-bg"></div>
+    <div class="nav-transition-mask js-nav-transition-mask">
+      <div class="nav-transition-mask__spinner | js-nav-transition-mask-spinner"><svg class="nav-transition-mask__spinner-svg | js-nav-transition-mask-spinner-svg" width="142" height="141" viewBox="0 0 142 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="63.6035" width="14.7917" height="14.7917" fill="white" />
+          <rect x="63.6035" y="125.729" width="14.7917" height="14.7917" fill="white" />
+          <rect x="142" y="62.125" width="14.7917" height="14.7917" transform="rotate(90 142 62.125)" fill="white" />
+          <rect x="16.2715" y="62.125" width="14.7917" height="16.2708" transform="rotate(90 16.2715 62.125)" fill="white" />
+        </svg></div>
+    </div>
+    <div asscroll-container>
+      <main>
+        <div anchor-target="landing"></div>
+        <div class="section landing | js-section" section-name="landing">
+          <h2 class="landing__title t-56 t-80@xs t-104@sm t-150@md t-lh-0.9 -t-ls-0.03 t-400 mb-1.5 t-lh-1.1 mb-1" animate-from="preset: 'splitTextRotateIn', delay: 0, duration: 1, scrollTrigger: { children: 'span' }"><span class="d-block">Unlock</span><span class="d-block">collective</span><span class="d-block">wisdom.</span></h2>
+          <div class="mobile-blur mt-0 mb-auto">
+            <div class="landing__body">
+              <div class="t-16 t-lh-1.2 t-ls-0.05 t-600 t-uppercase mb-1 t-yellow" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 1, duration: 1">Stop managing knowledge. Start using it.</div>
+              <p class="t-24 t-lh-1.5 -t-ls-0.02 t-200" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 1, duration: 1">Plug into your team’s shared brainpower. Ask Dala to instantly find anything or anyone from any workplace system. Focus on doing your best work with context, conviction and clarity.</p>
+              <div class="overflow-hidden">
+                <div class="d-flex" animate-from="yPercent: 120, rotate: 2, ease: 'expo.out', duration: 1, delay: 1.5"><a class="btn t-16 t-14@xs t-16@sm t-ls-0.025 t-600 t-uppercase" aria-label="Request Access" href="https://askdala.typeform.com/to/lSujgyr8" target="_blank" rel="noopener"><span class="btn__text pointer-events-none">Request Access</span>
+                    <div class="btn__hover pointer-events-none" aria-hidden="true"></div>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section section--tall introduction | js-section">
+          <div class="mobile-blur">
+            <h2 class="introduction__title t-32 t-lh-1.3 t-56@sm t-lh-0.9@sm t-lh-1.2@sm -t-ls-0.03 t-400 mb-1 mb-2@sm" animate-from="preset: 'splitTextRotateIn', scrollTrigger: { start: 'top bottom' }">Make decisions with confidence</h2>
+            <p class="introduction__body t-24 t-lh-1.5 -t-ls-0.02 t-200" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.5, duration: 0.8, scrollTrigger: { start: 'top bottom' }">Dala’s bleeding-edge AI search tool automates extracting knowledge from across your organisation so that you can take the guesswork out of your work.</p>
+          </div>
+        </div>
+        <div class="js-section" section-name="manifesto">
+          <div class="manifesto--introduction-container" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.5, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: '.js-manifesto-p'" animate-mq="smMax">
+            <div class="section manifesto--introduction">
+              <div class="manifesto__body" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: '.js-manifesto-p'" animate-mq="sm">
+                <p class="t-24 t-lh-1.3 -t-ls-0.03 t-48@sm t-lh-1.2@sm t-400 | js-manifesto-p">This is your workplace today. Countless fragments of critical knowledge scattered across hundreds of disparate systems.</p>
+                <p class="t-24 t-lh-1.3 -t-ls-0.03 t-48@sm t-lh-1.2@sm t-400 | js-manifesto-p">30% of your time is spent trying to organise and find the information and expertise you need to do your job.</p>
+              </div>
+            </div>
+            <div class="section manifesto--introduction">
+              <div class="manifesto__body" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: '.js-manifesto-p'" animate-mq="sm">
+                <p class="t-24 t-lh-1.3 -t-ls-0.03 t-48@sm t-lh-1.2@sm t-400 | js-manifesto-p">The impossible battle to make sense of this chaos leaves your team feeling overwhelmed and unproductive.</p>
+                <p class="t-24 t-lh-1.3 -t-ls-0.03 t-48@sm t-lh-1.2@sm t-400 | js-manifesto-p">They’re confronted with the anxiety of bothering a busy coworker again, or aimlessly trying to connect the dots with incomplete context.</p>
+              </div>
+            </div>
+            <div class="section manifesto--introduction">
+              <div class="manifesto__body" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: '.js-manifesto-p'" animate-mq="sm">
+                <p class="t-24 t-lh-1.3 -t-ls-0.03 t-48@sm t-lh-1.2@sm t-400 | js-manifesto-p">Existing solutions are cumbersome and quickly become outdated. Yet another decaying system that requires continuous maintenance.</p>
+                <p class="t-24 t-lh-1.3 -t-ls-0.03 t-48@sm t-lh-1.2@sm t-400 | js-manifesto-p">They fail to understand what you need from the vast amounts of information that your team creates every day.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section section--tall manifesto manifesto--section items-end@md js-section" section-name="manifesto">
+          <div class="manifesto__inner mobile-blur">
+            <h2 class="manifesto__title t-32 t-lh-1.3 t-56@sm t-lh-0.9@sm t-lh-1.2@sm -t-ls-0.03 t-400 mb-1 mb-2@sm" animate-from="preset: 'splitTextRotateIn', scrollTrigger: { start: 'top bottom' }">Spark lightbulb moments</h2>
+            <div class="manifesto__body" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.5, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: 'p'">
+              <p class="t-24 t-lh-1.5 -t-ls-0.02 t-200">Dala is your intelligent, real-time source of truth that eliminates the cultural, financial and operational struggles of splintered tools.</p>
+              <p class="t-24 t-lh-1.5 -t-ls-0.02 t-200">We connect your systems behind the scenes and pull together exactly the knowledge you require into an elegant contextual view.</p>
+              <p class="t-24 t-lh-1.5 -t-ls-0.02 t-200">Just ask Dala for the answer that advances your work, and helps you make better decisions with more confidence.</p>
+            </div>
+          </div>
+        </div>
+        <div class="section section--tall manifesto manifesto--section items-start@md js-section" section-name="manifesto">
+          <div class="manifesto__inner mobile-blur">
+            <h2 class="manifesto__title t-32 t-lh-1.3 t-56@sm t-lh-0.9@sm t-lh-1.2@sm -t-ls-0.03 t-400 mb-1 mb-2@sm" animate-from="preset: 'splitTextRotateIn', scrollTrigger: { start: 'top bottom' }">Build a better world of work</h2>
+            <div class="manifesto__body" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.5, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: 'p'">
+              <p class="t-24 t-lh-1.5 -t-ls-0.02 t-200">Our mission is to make work more coherent and delightful—reframing productivity from <em>doing more</em> to <a href="https://medium.com/dala-ai/why-we-started-dala-a36fc6cbbdb9" target="_blank" rel="noreferrer noopener"><em>being better<span class="t-white">.</span></em></a></p>
+              <p class="t-24 t-lh-1.5 -t-ls-0.02 t-200">Your happiest and most purposeful moments at work are when you’re in flow, intellectually stimulated, and creating value for customers.</p>
+              <p class="t-24 t-lh-1.5 -t-ls-0.02 t-200">We want to recreate that every time you experience Dala. A tool that is completely integrated with how you think, feel and work.</p>
+            </div>
+          </div>
+        </div>
+        <div class="section js-section js-team-section mb-1" section-name="team" anchor-target="team">
+          <div class="team">
+            <div class="team__head js-team-head" animate-mq="sm" animate-from="y: '-5vw', scrollTrigger: { scrub: 0.5, once: false, start: 'top bottom' }">
+              <h2 class="t-56 t-lh-1 t-64@sm t-lh-1.2@sm t-104@md t-lh-1.1@md -t-ls-0.03 t-400 mb-2@xs mb-2.5@sm mb-3@md" animate-from="preset: 'splitTextRotateIn', scrollTrigger: { start: 'top bottom' }">Our team</h2>
+            </div>
+            <div class="team-slider | js-slider">
+              <div class="team-slider__slides-container">
+                <ul class="team-slider__slides | js-slides">
+                  <li class="team-card | js-slide" slide-id="Haroun Hickman">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/haroun.jpg" alt="Portrait of Haroun Hickman" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Poppy Reid">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/poppy.jpg" alt="Portrait of Poppy Reid" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Joel Kang">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/joel.jpg" alt="Portrait of Joel Kang" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Haroun Hickman">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/haroun.jpg" alt="Portrait of Haroun Hickman" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Poppy Reid">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/poppy.jpg" alt="Portrait of Poppy Reid" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Joel Kang">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/joel.jpg" alt="Portrait of Joel Kang" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Haroun Hickman">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/haroun.jpg" alt="Portrait of Haroun Hickman" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Poppy Reid">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/poppy.jpg" alt="Portrait of Poppy Reid" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Joel Kang">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/joel.jpg" alt="Portrait of Joel Kang" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Haroun Hickman">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/haroun.jpg" alt="Portrait of Haroun Hickman" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Poppy Reid">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/poppy.jpg" alt="Portrait of Poppy Reid" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Joel Kang">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/joel.jpg" alt="Portrait of Joel Kang" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Haroun Hickman">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/haroun.jpg" alt="Portrait of Haroun Hickman" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Poppy Reid">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/poppy.jpg" alt="Portrait of Poppy Reid" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Joel Kang">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/joel.jpg" alt="Portrait of Joel Kang" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Haroun Hickman">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/haroun.jpg" alt="Portrait of Haroun Hickman" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Poppy Reid">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/poppy.jpg" alt="Portrait of Poppy Reid" loading="lazy"></div>
+                  </li>
+                  <li class="team-card | js-slide" slide-id="Joel Kang">
+                    <div class="team-card__inner"><img class="team-card__image | js-slide-image" src="/images/team/joel.jpg" alt="Portrait of Joel Kang" loading="lazy"></div>
+                  </li>
+                </ul>
+              </div>
+              <ul class="team-slider__content">
+                <li class="team-slider__content__item">
+                  <div class="team-card__content | js-slide-content" slide-id="Haroun Hickman"><span class="t-16 t-lh-1.2 t-ls-0.05 t-600 t-uppercase mb-1 t-purple | js-role">Co Founder &amp; CEO</span>
+                    <h3 class="t-40 t-lh-1 t-56@md t-lh-0.9@md t-lh-1.2@md -t-ls-0.03 t-400 mb-1 | js-name">Haroun Hickman</h3>
+                    <div class="team-card__social"><a class="team-card__social__link | js-social-icon" href="https://twitter.com/HarounHickman" target="_blank" rel="noopener"><span class="sr">Twitter</span><svg class="team-card__social__icon team-card__social__icon--twitter">
+                          <use xlink:href="images/svgsprite.svg#twitter"></use>
+                        </svg></a><a class="team-card__social__link | js-social-icon" href="https://www.linkedin.com/in/harounhickman" target="_blank" rel="noopener"><span class="sr">Linkedin</span><svg class="team-card__social__icon team-card__social__icon--linkedin">
+                          <use xlink:href="images/svgsprite.svg#linkedin"></use>
+                        </svg></a></div>
+                  </div>
+                </li>
+                <li class="team-slider__content__item">
+                  <div class="team-card__content | js-slide-content" slide-id="Poppy Reid"><span class="t-16 t-lh-1.2 t-ls-0.05 t-600 t-uppercase mb-1 t-purple | js-role">Product Design Lead</span>
+                    <h3 class="t-40 t-lh-1 t-56@md t-lh-0.9@md t-lh-1.2@md -t-ls-0.03 t-400 mb-1 | js-name">Poppy Reid</h3>
+                    <div class="team-card__social"><a class="team-card__social__link | js-social-icon" href="https://twitter.com/ReidPoppy" target="_blank" rel="noopener"><span class="sr">Twitter</span><svg class="team-card__social__icon team-card__social__icon--twitter">
+                          <use xlink:href="images/svgsprite.svg#twitter"></use>
+                        </svg></a><a class="team-card__social__link | js-social-icon" href="https://www.linkedin.com/in/poppy-reid-484087121" target="_blank" rel="noopener"><span class="sr">Linkedin</span><svg class="team-card__social__icon team-card__social__icon--linkedin">
+                          <use xlink:href="images/svgsprite.svg#linkedin"></use>
+                        </svg></a></div>
+                  </div>
+                </li>
+                <li class="team-slider__content__item">
+                  <div class="team-card__content | js-slide-content" slide-id="Joel Kang"><span class="t-16 t-lh-1.2 t-ls-0.05 t-600 t-uppercase mb-1 t-purple | js-role">Co Founder &amp; CTO</span>
+                    <h3 class="t-40 t-lh-1 t-56@md t-lh-0.9@md t-lh-1.2@md -t-ls-0.03 t-400 mb-1 | js-name">Joel Kang</h3>
+                    <div class="team-card__social"><a class="team-card__social__link | js-social-icon" href="https://twitter.com/_joel_kang_" target="_blank" rel="noopener"><span class="sr">Twitter</span><svg class="team-card__social__icon team-card__social__icon--twitter">
+                          <use xlink:href="images/svgsprite.svg#twitter"></use>
+                        </svg></a><a class="team-card__social__link | js-social-icon" href="https://www.linkedin.com/in/joelkang" target="_blank" rel="noopener"><span class="sr">Linkedin</span><svg class="team-card__social__icon team-card__social__icon--linkedin">
+                          <use xlink:href="images/svgsprite.svg#linkedin"></use>
+                        </svg></a></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="team-slider__controls"><button class="team-slider__control team-slider__previous | js-slider-prev"><span class="sr">Previous</span>
+                  <div class="team-slider__control-bg | js-slider-prev-bg"></div>
+                  <div class="team-slider__control-hover | js-slider-prev-hover"></div><svg>
+                    <use xlink:href="images/svgsprite.svg#arrow"></use>
+                  </svg>
+                </button><button class="team-slider__control team-slider__next | js-slider-next"><span class="sr">Next</span>
+                  <div class="team-slider__control-bg | js-slider-next-bg"></div>
+                  <div class="team-slider__control-hover | js-slider-next-hover"></div><svg>
+                    <use xlink:href="images/svgsprite.svg#arrow"></use>
+                  </svg>
+                </button></div>
+            </div>
+            <div animate-from="y: '-5vw', scrollTrigger: { trigger: '.js-team-head', scrub: 0.5, once: false, start: 'top bottom' }">
+              <h3 class="t-36 t-lh-1 -t-ls-0.03 t-400 mt-5@sm" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.5, duration: 0.8, scrollTrigger: { start: 'top bottom' }">Build with us.</h3>
+              <div class="team__body" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 1, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: 'p'">
+                <p class="t-20 t-lh-1.5 -t-ls-0.03 t-400">We are actively hiring intentional, empathetic and curious people who thrive on creating delightful experiences. If you'd like to be a part of the journey, email <a href="mailto:careers@dala.ai">careers@dala.ai</a> with your CV or portfolio, and a thoughtful note.</p>
+                <p class="t-20 t-lh-1.5 -t-ls-0.03 t-400">Read more about our values <a href="https://medium.com/dala-ai/why-we-wrote-our-values-before-we-wrote-a-single-line-of-code-99ada8a18cd5" target="_blank" rel="“noreferrer" noopener”>here</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="investors">
+            <div class="investors__item">
+              <div class="investor">
+                <div class="investor__icon d-none@sm" animate-from="yPercent: 100, autoAlpha: 0, rotate: 14, ease: 'expo.out', duration: 1"><img class="investor__icon__image" src="/images/investors/1.png" aria-hidden="true" loading="lazy"></div>
+                <div class="investor__icon d-none d-block@sm" dom2webgl="c:Pyramid" material-color="0xFFB829" start-x="1200" parallax-speed="1.5"></div>
+                <div class="investor__body">
+                  <div class="t-32 t-lh-1.25 -t-ls-0.03 t-400">Seedcamp</div>
+                </div>
+              </div>
+            </div>
+            <div class="investors__item">
+              <div class="investor">
+                <div class="investor__icon d-none@sm" animate-from="yPercent: 100, autoAlpha: 0, rotate: 14, ease: 'expo.out', duration: 1"><img class="investor__icon__image" src="/images/investors/2.png" aria-hidden="true" loading="lazy"></div>
+                <div class="investor__icon d-none d-block@sm" dom2webgl="c:Pyramid" material-color="0x189B81" start-x="-1000" parallax-speed="0.5"></div>
+                <div class="investor__body">
+                  <div class="t-32 t-lh-1.25 -t-ls-0.03 t-400">James Meekings</div>
+                  <div class="t-16 t-lh-1.3 -t-ls-0.02 t-400 t-grey-4">Co-founder of Funding Circle</div>
+                </div>
+              </div>
+            </div>
+            <div class="investors__item">
+              <div class="investor">
+                <div class="investor__icon d-none@sm" animate-from="yPercent: 100, autoAlpha: 0, rotate: 14, ease: 'expo.out', duration: 1"><img class="investor__icon__image" src="/images/investors/3.png" aria-hidden="true" loading="lazy"></div>
+                <div class="investor__icon d-none d-block@sm" dom2webgl="c:Pyramid" material-color="0xFFB829" start-x="1000" parallax-speed="1"></div>
+                <div class="investor__body">
+                  <div class="t-32 t-lh-1.25 -t-ls-0.03 t-400">Evening Fund</div>
+                </div>
+              </div>
+            </div>
+            <div class="investors__item">
+              <div class="investor">
+                <div class="investor__icon d-none@sm" animate-from="yPercent: 100, autoAlpha: 0, rotate: 14, ease: 'expo.out', duration: 1"><img class="investor__icon__image" src="/images/investors/4.png" aria-hidden="true" loading="lazy"></div>
+                <div class="investor__icon d-none d-block@sm" dom2webgl="c:Pyramid" material-color="0x926AFF" start-x="-1000" parallax-speed="-0.5"></div>
+                <div class="investor__body">
+                  <div class="t-32 t-lh-1.25 -t-ls-0.03 t-400">Valia Ventures</div>
+                </div>
+              </div>
+            </div>
+            <div class="investors__item">
+              <div class="investor">
+                <div class="investor__icon d-none@sm" animate-from="yPercent: 100, autoAlpha: 0, rotate: 14, ease: 'expo.out', duration: 1"><img class="investor__icon__image" src="/images/investors/5.png" aria-hidden="true" loading="lazy"></div>
+                <div class="investor__icon d-none d-block@sm" dom2webgl="c:Pyramid" material-color="0x926AFF" start-x="1000" parallax-speed="-1"></div>
+                <div class="investor__body">
+                  <div class="t-32 t-lh-1.25 -t-ls-0.03 t-400">Roman Schumacher</div>
+                  <div class="t-16 t-lh-1.3 -t-ls-0.02 t-400 t-grey-4">Co-founder &amp; CPO at Personio</div>
+                </div>
+              </div>
+            </div>
+            <div class="investors__text" animate-from="y: '2vw', scrollTrigger: { trigger: '.js-team-head', scrub: 0.5, once: false, start: 'top bottom' }">
+              <h2 class="t-56 t-lh-1 t-64@sm t-lh-0.9@sm t-104@md -t-ls-0.03 t-400 mb-2@xs mb-1@sm mb-1.5@md" animate-from="preset: 'splitTextRotateIn', rotate: 7, duration: 0.8, scrollTrigger: { start: 'top bottom' }">Our investors</h2>
+              <div class="investors__body" animate-from="preset: 'splitTextRotateIn', rotate: 7, delay: 0.5, duration: 0.8, scrollTrigger: { start: 'top bottom' }, children: 'p'">
+                <p class="t-20 t-lh-1.5 -t-ls-0.03 t-400">We are supported by some of the world&#39;s most pioneering operators and progressive funds to fuel our growth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section footer | js-section">
+          <div class="footer__head">
+            <h2 class="t-40 t-lh-1 t-48@sm t-lh-1.2@sm t-64@md t-lh-1.1@md -t-ls-0.03 t-400 mb-2" animate-from="preset: 'splitTextRotateIn', scrollTrigger: { start: 'top bottom' }">Your workplace has the answer. Ask Dala to find it.</h2>
+            <div class="d-flex justify-center"><a class="btn t-16 t-14@xs t-16@sm t-ls-0.025 t-600 t-uppercase" aria-label="Request access" href="https://askdala.typeform.com/to/lSujgyr8" target="_blank" rel="noopener"><span class="btn__text pointer-events-none">Request access</span>
+                <div class="btn__hover pointer-events-none" aria-hidden="true"></div>
+              </a></div>
+          </div>
+          <div class="footer__bar">
+            <div class="footer__logo"><svg width="113" height="48" viewBox="0 0 113 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <image width="38.8085" height="48" xlink:href="/images/dala-d.png?id=ef5e37d64e9743b91d7e" />
+                <g class="js-header-logo-text-group" clip-path="url(#textClip)">
+                  <path class="js-header-logo-text" d="M63.4826 14.253C65.7773 16.4227 66.904 19.3616 66.904 23.0766C66.904 26.7915 65.775 29.9363 63.4826 32.3526C61.1903 34.7689 58.0951 35.9928 54.1673 35.9928H46.3711V10.9951H53.9575C58.0145 10.9951 61.1895 12.0811 63.4826 14.253ZM60.944 30.5268C62.6729 28.7779 63.5533 26.2915 63.5533 23.0607C63.5533 20.0155 62.6729 17.7055 60.944 16.1309C59.215 14.5562 56.9204 13.7892 54.1331 13.7892H49.7241V33.1852H54.2859C56.9569 33.1852 59.1785 32.3028 60.944 30.5177V30.5268Z" fill="white" />
+                  <path class="js-header-logo-text" d="M80.1758 33.3594V32.6603H80.1393C79.8565 33.6038 79.2269 34.4703 78.2689 35.2485C77.3109 36.0268 75.9401 36.4047 74.1404 36.4047C72.0876 36.4047 70.5069 35.8798 69.4121 34.7938C68.3172 33.7078 67.7447 32.4838 67.7447 31.0495C67.7326 30.271 67.9144 29.5017 68.2739 28.8096C68.5818 28.2217 69.0016 27.6985 69.5102 27.2689C70.0785 26.8568 70.71 26.5383 71.3805 26.3255C72.0286 26.1143 72.6881 25.9391 73.3558 25.8006C73.885 25.6943 74.5556 25.5902 75.4086 25.4839L77.0053 25.2757C78.2051 25.0653 79.0581 24.7508 79.5143 24.3707C79.9705 23.9906 80.1849 23.4273 80.1849 22.692C80.1849 22.3133 80.0875 21.9408 79.9019 21.6099C79.7163 21.2789 79.4487 21.0003 79.1243 20.8006C78.3852 20.3481 77.3953 20.1015 76.1271 20.1015C74.9867 20.1015 74.0743 20.382 73.374 20.9771C73.012 21.2637 72.7171 21.6251 72.5099 22.0361C72.3028 22.4471 72.1882 22.8979 72.1743 23.3572H68.981C69.0517 21.8164 69.6858 20.4522 70.8856 19.2259C72.0853 18.0359 73.78 17.4409 76.0017 17.4409C77.1266 17.4259 78.2466 17.5917 79.3181 17.9318C80.1194 18.1812 80.8629 18.5857 81.5056 19.1219C82.0115 19.6128 82.4187 20.1948 82.7053 20.8368C82.9564 21.4318 83.1341 22.0547 83.2345 22.692C83.3078 23.3077 83.3436 23.9272 83.3417 24.5472V32.3164C83.3483 33.5469 83.449 34.7752 83.6428 35.9906H80.2442C80.2214 35.3888 80.1758 34.5155 80.1758 33.3594ZM78.6567 32.2802C79.715 31.2644 80.2533 29.6897 80.2533 27.5902V25.1694H80.1849C79.9454 25.8631 79.4758 26.4557 78.8528 26.8504C78.1457 27.3029 76.9102 27.6875 75.1463 28.0042C73.666 28.2485 72.6077 28.5992 71.9371 29.0201C71.2665 29.4409 70.9129 30.1038 70.9129 31.0563C70.9059 31.456 70.9989 31.8512 71.1836 32.2065C71.3683 32.5619 71.6389 32.8663 71.9713 33.0924C72.6761 33.6173 73.5953 33.8639 74.7244 33.8639C75.4531 33.8729 76.1763 33.7374 76.8515 33.4655C77.5268 33.1935 78.1405 32.7906 78.6567 32.2802Z" fill="white" />
+                  <path class="js-header-logo-text" d="M89.7004 10.9951V35.9838H86.5254V10.9951H89.7004Z" fill="white" />
+                  <path class="js-header-logo-text" d="M104.382 33.3599V32.6608H104.345C104.062 33.6042 103.433 34.4707 102.475 35.249C101.517 36.0273 100.146 36.4051 98.3463 36.4051C96.2934 36.4051 94.7127 35.8802 93.6179 34.7942C92.5231 33.7083 91.9597 32.4843 91.9597 31.0499C91.9464 30.2714 92.1283 29.5017 92.4888 28.8101C92.7967 28.2221 93.2166 27.6989 93.7251 27.2694C94.2934 26.8573 94.925 26.5387 95.5955 26.3259C96.2436 26.1148 96.903 25.9395 97.5707 25.801C98.0999 25.6947 98.7705 25.5906 99.6236 25.4843L101.22 25.2761C102.42 25.0657 103.273 24.7513 103.729 24.3712C104.185 23.9911 104.4 23.4277 104.4 22.6924C104.4 22.3115 104.301 21.9371 104.113 21.6048C103.926 21.2724 103.655 20.9934 103.328 20.7943C102.589 20.3418 101.599 20.0952 100.328 20.0952C99.1993 20.0952 98.2756 20.3757 97.5776 20.9707C97.2155 21.2574 96.9207 21.6187 96.7135 22.0297C96.5063 22.4407 96.3918 22.8915 96.3778 23.3508H93.1959C93.2666 21.8101 93.9007 20.4458 95.1005 19.2196C96.3003 18.0295 97.9927 17.4345 100.217 17.4345C101.342 17.4196 102.462 17.5854 103.533 17.9255C104.334 18.1749 105.078 18.5794 105.721 19.1155C106.226 19.6065 106.634 20.1885 106.92 20.8305C107.171 21.4254 107.349 22.0484 107.449 22.6857C107.523 23.3013 107.559 23.9209 107.557 24.5409V32.3101C107.557 33.5402 107.652 34.7684 107.839 35.9843H104.45C104.416 35.3893 104.382 34.516 104.382 33.3599ZM102.872 32.2807C103.93 31.2648 104.468 29.6902 104.468 27.5906V25.1698H104.4C104.158 25.8649 103.685 26.4577 103.059 26.8508C102.352 27.3033 101.116 27.6879 99.3521 28.0047C97.8718 28.249 96.8135 28.5997 96.1429 29.0205C95.4723 29.4413 95.1187 30.1042 95.1187 31.0567C95.1117 31.4564 95.2048 31.8516 95.3895 32.207C95.5741 32.5623 95.8448 32.8667 96.1771 33.0929C96.8728 33.6178 97.8011 33.8644 98.9256 33.8644C99.6566 33.8752 100.382 33.7406 101.06 33.4686C101.738 33.1966 102.354 32.7926 102.872 32.2807Z" fill="white" />
+                  <path class="js-header-logo-text" d="M109.939 12.5227C110.402 12.5112 110.858 12.636 111.249 12.8814C111.64 13.1268 111.949 13.4817 112.137 13.9012C112.325 14.3208 112.383 14.7861 112.304 15.2385C112.225 15.6908 112.013 16.1098 111.694 16.4425C111.375 16.7752 110.964 17.0067 110.513 17.1077C110.061 17.2086 109.59 17.1746 109.158 17.0098C108.726 16.845 108.353 16.5568 108.086 16.1818C107.819 15.8068 107.67 15.3617 107.658 14.9028V14.844C107.654 14.5429 107.71 14.244 107.822 13.9643C107.935 13.6846 108.102 13.4297 108.313 13.2141C108.525 12.9984 108.778 12.8264 109.057 12.7078C109.336 12.5891 109.636 12.5262 109.939 12.5227ZM109.939 16.7014C110.31 16.7151 110.676 16.6194 110.992 16.4264C111.308 16.2334 111.559 15.9519 111.713 15.6174C111.868 15.2829 111.919 14.9105 111.86 14.5473C111.801 14.184 111.635 13.8463 111.382 13.5768C111.13 13.3074 110.802 13.1182 110.441 13.0334C110.08 12.9485 109.702 12.9718 109.355 13.1002C109.007 13.2285 108.706 13.4563 108.489 13.7546C108.271 14.0529 108.148 14.4084 108.135 14.7761C108.135 14.7987 108.135 14.8213 108.135 14.844C108.129 15.0817 108.17 15.3183 108.256 15.5403C108.341 15.7623 108.471 15.9654 108.636 16.1379C108.801 16.3104 108.998 16.4489 109.217 16.5456C109.436 16.6423 109.672 16.6953 109.912 16.7014H109.939ZM109.561 16.0838H109.077V13.5951H109.958C110.48 13.5951 110.856 13.9209 110.856 14.4005C110.858 14.5516 110.81 14.6992 110.721 14.8214C110.631 14.9437 110.504 15.0341 110.359 15.0793L110.888 16.0883H110.373L109.939 15.1584H109.581L109.561 16.0838ZM109.561 14.0204V14.7625H109.889C110.19 14.7625 110.345 14.6494 110.345 14.3937C110.345 14.1381 110.181 14.0204 109.889 14.0204H109.561Z" fill="white" />
+                </g>
+                <clipPath id="textClip">
+                  <rect width="74.1915" height="28" x="38.8085" fill="white" y="10" />
+                </clipPath>
+              </svg><span class="sr">Dala</span></div>
+            <div class="footer__copyright"><span class="footer__copyright__item">© 2021 Dala Technologies Limited.</span><span class="footer__copyright__item">All rights reserved.</span></div>
+            <ul class="footer__nav">
+              <li class="footer__nav__item | js-nav-item" section-name="manifesto"><button class="footer__nav__link t-16 t-lh-1.2 t-14@xs t-lh-1.4@xs t-16@sm t-lh-1.2@sm -t-ls-0.025 t-600 t-uppercase | js-nav-link" anchor-link="manifesto">Manifesto</button></li>
+              <li class="footer__nav__item | js-nav-item" section-name="team"><button class="footer__nav__link t-16 t-lh-1.2 t-14@xs t-lh-1.4@xs t-16@sm t-lh-1.2@sm -t-ls-0.025 t-600 t-uppercase | js-nav-link" anchor-link="team">Team</button></li>
+              <li class="footer__nav__item | js-nav-item" section-name="blog"><a class="footer__nav__link t-16 t-lh-1.2 t-14@xs t-lh-1.4@xs t-16@sm t-lh-1.2@sm -t-ls-0.025 t-600 t-uppercase | js-nav-link" href="https://medium.com/dala-ai" target="_blank" rel="noopener">Blog</a></li>
+              <li class="footer__nav__item | js-nav-item" section-name="privacy"><a class="footer__nav__link t-16 t-lh-1.2 t-14@xs t-lh-1.4@xs t-16@sm t-lh-1.2@sm -t-ls-0.025 t-600 t-uppercase | js-nav-link" href="/privacy" target="_blank" rel="noopener">Privacy</a></li>
+              <li class="footer__nav__item | js-nav-item" section-name="terms"><a class="footer__nav__link t-16 t-lh-1.2 t-14@xs t-lh-1.4@xs t-16@sm t-lh-1.2@sm -t-ls-0.025 t-600 t-uppercase | js-nav-link" href="/terms" target="_blank" rel="noopener">Terms</a></li>
+            </ul>
+            <div class="footer__social"><a class="footer__social__link" href="https://www.linkedin.com/company/askdala/" rel="noopener" target="_blank"><span class="sr">LinkedIn</span><svg class="footer__social__icon footer__social__icon--linkedin">
+                  <use xlink:href="/images/svgsprite.svg#linkedin"></use>
+                </svg></a><a class="footer__social__link" href="https://twitter.com/askdala" rel="noopener" target="_blank"><span class="sr">Twitter</span><svg class="footer__social__icon footer__social__icon--twitter">
+                  <use xlink:href="/images/svgsprite.svg#twitter"></use>
+                </svg></a><a class="footer__social__link" href="mailto:hello@dala.ai" rel="noopener" target="_blank"><span class="sr">Email</span><svg class="footer__social__icon footer__social__icon--email">
+                  <use xlink:href="/images/svgsprite.svg#email"></use>
+                </svg></a></div>
+          </div>
+        </div>
+        <div style="position: absolute; left: 0; bottom: -1px; width: 2px; height: 2px;"></div>
+      </main>
+    </div>
+    <div class="fixed fill w-1/1 h-1/1 z-negative user-select-none pointer-events-none"><canvas id="canvas"></canvas></div>
+    <script src="/scripts/manifest.js?id=56c180749f72ce2fab44"></script>
+    <script src="/scripts/vendor.js?id=363d4e5f014895ea1edb"></script>
+    <script src="/scripts/theme.js?id=7feb6cb38ae0c259a09e"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5SSFERMSM"></script>
+    <script>
+      ! function(i, n) {
+        var r, s, a, c;
+        n.__SV || ((window.posthog = n)._i = [], n.init = function(t, e, o) {
+          (a = i.createElement("script")).type = "text/javascript", a.async = !0, a.src = e.api_host + "/static/array.js", (c = i.getElementsByTagName("script")[0]).parentNode.insertBefore(a, c);
+          var p = n;
+          for (void 0 !== o ? p = n[o] = [] : o = "posthog", p.people = p.people || [], p.toString = function(t) {
+              var e = "posthog";
+              return "posthog" !== o && (e += "." + o), t || (e += " (stub)"), e
+            }, p.people.toString = function() {
+              return p.toString(1) + ".people (stub)"
+            }, r = "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "), s = 0; s < r.length; s++) ! function(t, e) {
+            var o = e.split(".");
+            2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function() {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+            }
+          }(p, r[s]);
+          n._i.push([t, e, o])
+        }, n.__SV = 1)
+      }(document, window.posthog || []), posthog.init("phc_om6EEoimCZ0rbsNAVj3JKXJKUxRoMzW4ilWG7j2YRZw", {
+        api_host: "https://app.posthog.com"
+      })
+    </script>
+  </body>
+</html>
