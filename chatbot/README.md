@@ -22,9 +22,6 @@ Your API key will look something like this: AIzaSyAtpnKGX13bTgmx0l_gQeatYvdWvY_w
 1. Save the `script.js` file after adding your API key.
 2. Open` index.html` in your browser to verify that Chatbot is working correctly.
 
-If you still get an error or get stuck, feel free to message me on Buy Me a Coffee.
-https://buymeacoffee.com/codingnepal
-
 ---
 
 Happy coding!
