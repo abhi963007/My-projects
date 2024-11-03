@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Light background */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align content */
+        }
+
+        h1 {
+            color: #333; /* Dark color for the header */
+            margin-bottom: 20px;
+        }
+
+        .upload-container {
+            background: white; /* White background for the upload form */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            width: 300px; /* Fixed width for form */
+            text-align: center; /* Center align text */
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px; /* Space below the file input */
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff; /* Blue button */
+            color: white; /* White text */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            transform: scale(1.05); /* Slightly enlarge button on hover */
+        }
+
+        .back-button {
+            margin-top: 20px; /* Space above the back button */
+            display: inline-block; /* Make sure the button aligns properly */
+        }
+
+        /* Add gap between buttons */
+        .upload-container button {
+            margin-bottom: 10px; /* Adjust this value to increase/decrease the gap */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Upload Image</h1>
+
+<div class="upload-container">
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Upload</button>
+    </form>
+    <a class="back-button" href="gallery.php">
+        <button>Back to Gallery</button>
+    </a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            height: 100vh; /* Full viewport height */
+            overflow: auto; /* Allow scrolling */
+        }
+
+        h1, h2 {
+            color: #007b5e;
+        }
+
+        p, li {
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Blurred Background */
+        body::before {
+            content: '';
+            position: fixed; /* Fixed position to cover the viewport */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('parallax1.jpg') no-repeat center center;
+            background-size: cover;
+            filter: blur(8px); /* Apply blur */
+            z-index: -1; /* Ensure it's behind other content */
+        }
+
+        /* Layout and Section Styling */
+        .placement {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            padding: 50px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative; /* Position relative to use z-index for blur */
+            z-index: 1; /* Ensure it sits above the background */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        /* Individual Columns Styling */
+        .placement-col {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            margin: 15px;
+            width: 30%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .placement-col h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .placement-col ul, .placement-col p {
+            font-size: 16px;
+        }
+
+        .placement-col:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .placement-col {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p, li {
+                font-size: 14px;
+            }
+
+            .placement-col {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="placement">
+        <h1>Placements at Mangalam College of Engineering</h1>
+        <p>Our placement cell has a proven track record of helping students secure jobs at leading companies. We provide guidance, training, and resources to help students succeed in the job market.</p>
+    
+        <div class="row">
+            <div class="placement-col">
+                <h2>Placement Statistics</h2>
+                <ul>
+                    <li>95% of students placed in the last academic year</li>
+                    <li>Highest Package: ₹12 LPA</li>
+                    <li>Average Package: ₹6 LPA</li>
+                </ul>
+            </div>
+    
+            <div class="placement-col">
+                <h2>Top Recruiters</h2>
+                <ul>
+                    <li>TCS</li>
+                    <li>Infosys</li>
+                    <li>Wipro</li>
+                    <li>HCL</li>
+                    <li>Accenture</li>
+                    <li>Amazon</li>
+                </ul>
+            </div>
+    
+            <div class="placement-col">
+                <h2>Student Success Stories</h2>
+                <p>Meet some of our successful alumni who have secured top positions in the IT industry. Their journeys from the classroom to the corporate world inspire the next generation of students.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

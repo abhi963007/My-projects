@@ -1,0 +1,98 @@
+/* Basic styling for the entire page */
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Styling for the login form container */
+.ps-page--login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Basic styling for the login form */
+.ps-form--login {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Header within the form */
+.ps-form__header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for input fields */
+.ps-form--login .form-group {
+    margin-bottom: 15px;
+}
+
+input.form-control {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styling for the login button */
+button.ps-btn {
+    background-color: #0088cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button.ps-btn:hover {
+    background-color: #005577;
+}
+
+/* Forgot password link */
+.form-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-forgot a {
+    color: #0088cc;
+    text-decoration: none;
+}
+
+.form-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Social media links */
+.ps-list--social {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.ps-list--social li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.ps-list--social li a {
+    color: #333;
+    font-size: 24px;
+}
+
+.ps-list--social li a:hover {
+    color: #0088cc;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Pay Fees - GGU</title>
+  <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+  <link rel="stylesheet" href="css/fees_style.CSS">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <div class="fees-logo">
+        <a href="index.html"><img src="image/logo.png" id="logo-img"></a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <span class="icon" onclick="hidemenu()">&#10005;</span>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Admission_page.html">Admission</a></li>
+          <li><a href="#course_call">Course</a></li>
+          <li><a href="fees_page.html">Fees</a></li>
+          <li><a href="Contact_page.html">Contact</a></li>
+          <li><a href="Faculties.html">Faculties</a></li>
+          <li><a href="Event.html">Events</a></li>
+          <li><a href="placement.html">Placement</a></li>
+        </ul>
+      </div>
+      <span class="icon" onclick="showmenu()">&#9776;</span>
+    </nav>
+
+    <form onsubmit="pay()">
+      <div class="wrapper">
+        <div class="r_form_wrap">
+          <div class="title">
+            <p id="header_fees">Upload Fee Receipt</p>
+          </div>
+          
+          <!-- Upload Fee Receipt Section -->
+          <div class="r_form">
+            <div class="input_wrap">
+              <label for="receipt">Upload Fee Receipt</label>
+              <div class="input_item">
+                <i class="fa fa-credit-card" id="icon"></i>
+                <p id="demo1" class="input"></p>
+              </div>
+            </div>
+            
+            <input type="button" class="button" value="Upload Receipt" onclick="uploadReceipt()">
+            
+            <script>
+              function uploadReceipt() {
+                window.open('https://drive.google.com/drive/u/0/my-drive', '_blank');
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+  
+  <div class="none_div"></div>
+
+  <script src="javascript/fees_script.js"></script>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showmenu() {
+        navLinks.style.right = "0";
+    }   
+    function hidemenu() {
+        navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>

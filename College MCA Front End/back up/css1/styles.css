@@ -1,0 +1,370 @@
+<style>
+    /* General Styles */
+    body, html {
+        width: 100%;
+        height: 100%;
+    }
+
+    body, p {
+        color: #000000;
+        font: 400 1rem/1.625rem "Montserrat", sans-serif;
+    }
+
+    .p-large {
+        font: 400 1.125rem/1.75rem "Montserrat", sans-serif;
+        color: #fff;
+    }
+
+    .p-small {
+        font: 400 0.875rem/1.5rem "Montserrat", sans-serif;
+    }
+    .header {
+        position: relative;
+        padding-top: 8rem;
+        padding-bottom: 40%;
+        background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/header-background.jpg') center center no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #ffffff;
+        font-weight: 700;
+    }
+
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 1.625rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    h5 {
+        font-size: 1.125rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: #555;
+    }
+
+    .navbar-custom h5 {
+        color: white;
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    /* Buttons */
+    .btn-solid-reg, .btn-solid-lg, .btn-outline-reg, .btn-outline-lg, .btn-outline-sm {
+        border-radius: 2rem;
+        transition: all 0.2s;
+    }
+
+    .btn-solid-reg {
+        border: 0.125rem solid #ffbd50;
+        background-color: #ffbd50;
+        color: #333;
+    }
+
+    .btn-solid-lg {
+        padding: 1.375rem 2.625rem;
+        border: 0.125rem solid #ffbd50;
+        background-color: #ffbd50;
+    }
+
+    .btn-outline-reg, .btn-outline-lg {
+        border: 0.125rem solid #333;
+        background-color: transparent;
+        color: #ffffff;
+
+    }
+    .btn-outline-lg {
+        display: inline-block;
+        padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+        border: 0.125rem solid #ffffff;
+        border-radius: 2rem;
+        background-color: transparent;
+        color: #ffffff;
+        font: 600 0.875rem/0 "Montserrat", sans-serif;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+    
+    .btn-outline-lg:hover {
+        border: 0.125rem solid #ffbd50;
+        background-color: #ffbd50;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .btn-outline-reg:hover {
+        border: 0.125rem solid #ffbd50;
+        background-color: #ffbd50;
+        color: #333;
+    }
+
+
+    /* Forms */
+    .form-control-input, .form-control-select {
+        padding: 1.0625rem;
+        border: 1px solid #c4d8dc;
+        background-color: #fff;
+        transition: all 0.2s;
+    }
+
+    .form-control-input:hover, .form-control-select:hover, .form-control-textarea:hover {
+        border-color: #a1a1a1;
+    }
+
+    .form-control-submit-button {
+        width: 100%;
+        height: 3.125rem;
+        border: 0.125rem solid #ffbd50;
+        border-radius: 1.5rem;
+        background-color: #ffbd50;
+        color: #333;
+    }
+
+    .form-control-submit-button:hover {
+        border-color: #333;
+        background-color: transparent;
+        color: #333;
+    }
+
+    /* Navbar */
+    .navbar-custom {
+        background-color: #ffffff;
+        box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.04);
+        font: 600 0.875rem/0.875rem "Montserrat", sans-serif;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-custom .logo-image img {
+        width: 60px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .navbar-custom .navbar-nav {
+        margin-top: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar-custom .nav-item .nav-link {
+        padding: 0.625rem 0.75rem;
+        color: #333;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .navbar-custom .nav-item .nav-link:hover {
+        color: #ffbd50;
+    }
+
+    .navbar-custom .dropdown-menu {
+        margin-top: 0;
+        border: none;
+        border-radius: 0.25rem;
+        background-color: #fff;
+    }
+
+    .navbar-custom .dropdown-item {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .navbar-custom .dropdown-item:hover {
+        background-color: #fff;
+    }
+
+    /* Moving Banner */
+    .moving-banner {
+        background-color: #313131;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 0px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        overflow: hidden;
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner-text {
+        white-space: nowrap;
+        display: inline-block;
+        will-change: transform;
+        animation: moveText 25s linear infinite;
+    }
+
+    @keyframes moveText {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    /* Slider Section */
+    .slider-section {
+        margin-top: 50px;
+        background-color: #f8f9fa;
+        border-radius: 15px;
+        border: 2px solid #e9ecef;
+        overflow: hidden;
+        max-width: 900px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    /* Ensure that the images inside the box follow the border radius and fill the container */
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Responsive Design */
+    @media (min-width: 768px) {
+        .header {
+            padding-top: 9rem;
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            letter-spacing: -0.3px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .navbar-custom {
+            padding: 2.125rem 1.5rem 2.125rem 2rem;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .navbar-custom .navbar-nav {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .navbar-custom .nav-item .nav-link {
+            padding: 0.25rem 0.75rem;
+            color: #eee;
+        }
+
+        .navbar-custom.top-nav-collapse {
+            padding: 0.5rem 1.5rem 0.5rem 2rem;
+            background-color: #fff;
+            box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-custom.top-nav-collapse .nav-item .nav-link {
+            color: #333;
+        }
+
+        .navbar-custom.top-nav-collapse .nav-item .nav-link:hover {
+            color: #ffbd50;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .header {
+            padding-bottom: 31rem;
+        }
+
+        .header .swiper-button-prev {
+            left: -2.25rem;
+        }
+
+        .header .swiper-button-next {
+            right: -2.25rem;
+        }
+    }
+
+    /* Preloader */
+    .spinner-wrapper {
+        position: fixed;
+        z-index: 999999;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #fbf9f5;
+    }
+
+    .spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 3.75rem;
+        height: 1.25rem;
+        margin: -0.625rem 0 0 -1.875rem;
+        text-align: center;
+    }
+
+    .spinner > div {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 100%;
+        background-color: #ffbd50;
+        -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    }
+
+    .spinner .bounce1 {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+    }
+
+    .spinner .bounce2 {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+    }
+
+    @-webkit-keyframes sk-bouncedelay {
+        0%, 80%, 100% {
+            -webkit-transform: scale(0);
+        }
+        40% {
+            -webkit-transform: scale(1.0);
+        }
+    }
+
+    @keyframes sk-bouncedelay {
+        0%, 80%, 100% {
+            transform: scale(0);
+        }
+        40% {
+            transform: scale(1.0);
+        }
+    }
+</style>
